@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人简历</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .box {
+            border: 3px solid black;
+            border-left: 0;
+            border-right: 0;
+            width: 100vw;
+            height: 100vh;
+            scroll-snap-type: y proximity;
+            overflow-y: scroll;
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+
+        h1 {
+            border-bottom: 1px solid black;
+        }
+
+        h3 {
+            /* background-color: red; */
+           padding-top: 80px;
+           padding-bottom: 20px;
+        }
+
+        h4 {
+            margin-left: 5%;
+        }
+
+        p {
+            width: 400px;
+            margin: 0 auto;
+            line-height: 30px;
+            font-size: 15px;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+        }
+
+        #basic,
+        #job,
+        #teach,
+        #assess,
+        #skill,
+        #prize,
+        #work-experience,
+        #project-experience,
+        #home {
+
+            height: 100vh;
+            scroll-snap-align: center;
+            scroll-snap-stop: always;
+        }
+
+        #home {
+            height: 100%;
+            width: 100%;
+            background-color: black !important;
+        }
+
+        .img {
+            width: 400px;
+            height: 400px;
+            margin: 0 auto;
+            padding-top: 100px;
+            background: none !important;
+        }
+
+        .title {  
+            -webkit-text-stroke: 2px #fff;
+        }
+        .title span {
+            font-size: 16px;
+            -webkit-text-stroke: 0
+        }
+        .title-box{
+            height: 46px;
+            width: 100%;
+            position: fixed;
+            text-wrap: nowrap;
+            overflow-x: auto;
+            z-index: 999;
+            background: none !important;
+        }
+         /* 自定义滚动条样式 */
+         .title-box::-webkit-scrollbar{
+            width: 5px;
+            height: 4px;
+         }
+         .title-box::-webkit-scrollbar-track{
+            background-color: #45b790;
+         }
+         .title-box::-webkit-scrollbar-thumb{
+            background-color: black;
+            border-radius: 5px;
+         }
+         .title-box::-webkit-scrollbar-thumb:hover{
+            background-color: white;
+         }
+
+       
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <div class="title-box">
+            <h1 class="title">个人简历/Resume
+                <span><a href="#home">首页</a></span>
+                <span><a href="#basic">基本信息</a></span>
+                <span><a href="#job">求职意向</a></span>
+                <span><a href="#teach">教育经历</a></span>
+                <span><a href="#assess">自我评价</a></span>
+                <span><a href="#skill">专业技能</a></span>
+                <span><a href="#prize">奖项荣誉</a></span>
+                <span><a href="#work-experience">工作经验</a></span>
+                <span><a href="#project-experience">项目经验</a></span>
+            </h1>
+        </div>
+      
+        <div id="home">
+            <p class="animate__animated animate__bounce" style="color: white; padding-top: 130px;">本人现在前端职位，有望成为一名全栈工程师或前端负责人</p>
+            <div class="img">
+                <img src="./t.jpg"
+                    style=" box-shadow: 0 0 8px #fff; width: 400px; -webkit-box-reflect: below 35px linear-gradient(transparent,transparent,#005);">
+            </div>
+
+        </div>
+        <div id="basic">
+            <h3>基本信息</h3>
+            <p>姓名:<span>高增庆</span></p>
+            <p>性别:<span>男</span></p>
+            <p>年龄:<span>20</span></p>
+            <p>电话:<span>15071720805</span></p>
+            <p>邮箱:<span>2792636728@qq.com</span></p>
+            <p>个人网站:<span>http://xxxxxx.xxx.com</span></p>
+            <p>github地址:<span>http://xxxxxx.xxx.com</span></p>
+            <p>gitee地址:<span>http://xxxxxx.xxx.com</span></p>
+        </div>
+        <div id="job">
+            <h3>求职意向</h3>
+            <p>前端开发实习生</p>
+        </div>
+        <div id="teach">
+            <h3>教育经历</h3>
+            <p> 2021/9--2025/6 三峡大学科技学院 本科</p>
+        </div>
+        <div id="assess">
+            <h3>自我评价</h3>
+            <p>抗压能力强，具有较强的自我管理能力</p>
+            <p>工作认真，积极主动，团队意识强</p>
+            <p>责任心强</p>
+        </div>
+        <div id="skill">
+            <h3>专业技能</h3>
+            <h4>语言基础</h4>
+            <p>1. 熟练使用HTML,CSS,JavaScript开发web网站</p>
+            <p>2.了解H5,C3,ECMAscript新特性</p>
+            <p>3.深入学习过浏览器工作原理,http协议</p>
+            <p>4. 熟练掌握axios,JQuery,BootStrap,mockjs等</p>
+            <h4>中枢</h4>
+            <p>1.学习过框架的原理以及vue的源码</p>
+            <p>2.熟练使用Element-ui,Element-Plus,AntDesign</p>
+            <p>3. 熟练使用node.js,mongodb,mysql等后台技术</p>
+            <p>4. 对webpack,vite等构建工具有一定了解</p>
+            <p>5. 精通vue2、vue3,熟练掌握react，并可以构建SPA应用</p>
+            <p>6. 熟练使用uniapp进行跨端开发</p>
+            <p>7. 熟练使用less,sass预编译器</p>
+            <h4>拓展</h4>
+            <p>1.了解TypeScript</p>
+            <p>2.了解WebGL,Three.js</p>
+            <p>3. 熟练使用Vscode,idea,HBuilderX,sublime代码编辑工具,git版本控制工具</p>
+            <p>4.了解Electron</p>
+        </div>
+        <div id="prize">
+            <h3>奖项荣誉</h3>
+            <h4>奖学金类</h4>
+            <p>二等奖学金</p>
+            <p>三好学生</p>
+            <p>国家励志奖学金</p>
+            <h4>证书</h4>
+            <p>软件设计师</p>
+            <p>金仓数据库认证专家KCP</p>
+            <p>金仓数据库认证专员KCA</p>
+        </div>
+        <div id="work-experience">
+            <h3>工作经验</h3>
+            <p>无</p>
+        </div>
+        <div id="project-experience">
+            <h3>项目经验</h3>
+        </div>
+    </div>
+
+    <script>
+        const divs = document.querySelectorAll(".box div")
+        console.log(divs);
+        for (const div of divs) {
+            let color = "#" + Math.random().toString(16).substring(2, 8).padEnd(6, '0')
+            div.style.background = color
+        }
+    </script>
+</body>
+
+</html>
